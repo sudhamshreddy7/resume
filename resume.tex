@@ -1,0 +1,307 @@
+%-------------------------
+% Resume in Latex
+% Author : Vayunandhan Reddy Yekkaluri
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Set the margins
+% \geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.5cm}
+\geometry{left=1.27cm, top=1.27cm, right=1.27cm, bottom=1.27cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & 
+        \hspace{-4.3mm} \footnotesize{\text{#2}} 
+    \end{tabular*}
+    \vspace{-9.0mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \hspace{-50mm} \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \hspace{-50mm} \footnotesize{#4}\vspace{-1mm} \\
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+
+\definecolor{burntorange}{rgb}{0.8, 0.33, 0.0}
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+
+\newcommand{\name}{Sudhamsh Reddy Dokuru} % Your Name
+\newcommand{\course}{MS -Computer Science} % Your Course
+% \newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{(813) 406-9245} % Your Phone Number
+\newcommand{\emaila}{sudhamshreddy06@gmail.com} %Email 1
+% \newcommand{\github}{xxxxxxxxxx} %Github
+% \newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{sudhamsh-dokuru-31b88b206} %linkedin
+
+
+
+\begin{document}
+\fontfamily{qtm}\selectfont
+% \setmainfont{Asana-Math}
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\normalfont \textbf{\name}}
+\end{center}
+\vspace{-4.0mm}
+\begin{center}
+    \small{\href{mailto:\emaila}{\emaila} \hspace{1mm} $|$ \hspace{1mm} \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin} \hspace{1mm} $|$ \hspace{1mm} \href{https://github.com/sudhamshreddy7?tab=repositories}{github.com/sudhamshreddy7} \hspace{1mm} $|$ \hspace{1mm} \phone }
+\end{center}
+\vspace{-3mm}
+
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{EDUCATION}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{\normalfont \textbf{University of South Florida, Tampa}} 
+{\normalfont \textit{Master of Science in Computer Science}} 
+{\normalfont  \textit{12/2024}} %Event Dates
+{GPA: 3.53}
+\resumeSubHeadingListEnd
+\vspace{-2.0mm}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{\normalfont \textbf{CVR College of Engineering-JNTUH, India}} 
+{\normalfont \textit{Bachelor of Technology in Computer Science and Engineering}} 
+{\normalfont \textit{07/2017 -- 06/2021}} %Event Dates
+{GPA: 9.2}
+% \resumeItemListStart
+% \vspace{-2.0mm}
+% \normalfont \item[] \footnotesize{\textbf{Relevant Coursework:} Design and Analysis of Algorithms, Data Structures, Database Management Systems, WEB Engineering, Probability and Statistics, UNIX and Shell Programming, R- Programming}
+% \vspace{-3.0mm}
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-3.0mm}
+
+%-----------EXPERIENCE-----------------
+\section{\normalfont EXPERIENCE}
+\resumeSubHeadingListStart
+
+
+
+\resumeExp
+{\normalfont \textbf{Opentext Technologies } | \textbf{\textit{Associate Software  Engineer}}}
+{\normalfont Hyderabad, India}
+{\normalfont 04/2021 -- 12/2022}
+{\normalfont }
+\vspace{1.0mm}
+\resumeItemListStart
+\normalfont \item[$\bullet$] Integrated Qualys and Prisma with OpenText ServiceNow, enhancing vulnerability management by \textbf{25\% and saving 10+ hours} per week for the operations team by designing and developing a service to track and update renewal data.
+\normalfont \item[$\bullet$] Developed an interactive OpenText CRM web application using React.js, HTML, and CSS, enhancing customer accessibility and user experience.
+\normalfont \item[$\bullet$] Automated task and case management processes, significantly improving ticket tracking and reducing task resolution time from \textbf{4 days to 6-7 hours}.
+\normalfont \item[$\bullet$]Maintained and implemented new functionalities in ITSM and CRM applications hosted on AWS, leveraging Microsoft SQL Server, Heat ITSM, Windows Server, Docker, Kubernetes, and Datadog for monitoring and performance optimization.
+\normalfont \item[$\bullet$]Leveraged AWS Lambda for scheduled jobs to generate business analytics data related to products and customers, resulting in a \textbf{20\% reduction} in time and cost for generating analytics data.
+\resumeItemListEnd
+
+\vspace{1.0mm}
+\resumeExp
+{\normalfont \textbf{OpenText Technologies} | \textbf{\textit{Software Engineering Intern}}}
+{\normalfont Bangalore, India}
+{\normalfont 12/2020 -- 03/2021}
+{}
+\vspace{1.0mm}
+\resumeItemListStart
+\normalfont \item[$\bullet$] Migrated previous testing scripts of OpenText Life Sciences Suite, resulting in a \textbf{70\% performance improvement} in running test scripts using Java, Selenium, Cucumber, and JUnit, to ensure product reliability and functionality.
+\normalfont \item[$\bullet$] Facilitated execution of \textbf{30+} daily mandatory tasks by designing and launching automation services to perform web scraping, information retrieval, data processing, and failed transaction tracking, among others.
+\resumeItemListEnd
+\vspace{1.0mm}
+\resumeSubHeadingListEnd
+\vspace{-6.0mm}
+\section{\normalfont TECHNICAL SKILLS}
+
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Java, C, Python, C++, Go, Rust, Javascript}} \\
+      \vspace{-4mm}
+      
+     \textbf{\normalsize{Databases:}}{ \normalsize{ MySql,, MicroSoft SQL Server, Postgre SQL}} \\
+      \vspace{-4mm}
+      
+     \textbf{\normalsize{Frameworks and Technologies:}}{ \normalsize{AWS, Docker, Kubernetes, React, Angular, RabbitMq, Kafka, Terraform, Ansible, Linux, AWS Lambda, DataDog, Networking, Azure Functions ServiceNow, SpringBoot, JMeter , Selenium, REST, Git, System Design, Heat ITSM, CRM, Cucumber,Maven, Jenkins}}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-4.0mm}
+%-----------PROJECTS-----------------
+\section{\normalfont ACADEMIC PROJECTS}
+\resumeSubHeadingListStart
+
+\resumeProject
+{\normalfont \textbf{Diminished Java: A complete object-oriented programming language (OOPL): } \raisebox{}{\href{https://github.com/sudhamshreddy7/Diminished_Java_Compiler}{\color{blue}\underline{[GitHub]}}}}
+{} %Event Dates
+\vspace{1.0mm}
+\resumeItemListStart
+% \normalfont \item[$\bullet$] Galvanized and developed Frontend, Catalog, and Order microservices to handle concurrent requests using Sockets
+\normalfont \item[$\bullet$]Designed the compiler to efficiently translate high-level DJ code into simplified, RISC-based machine instructions, leveraging the minimalistic nature of RISC to enhance execution speed and streamline hardware utilization.
+\normalfont \item[$\bullet$] Demonstrated the ability to express complex algorithms within the constraints of a minimalistic programming language. By leveraging RISC concepts, the DJ language was optimized for clarity and ease of compilation, resulting in a streamlined architecture that facilitates the implementation of core programming constructs without unnecessary complexity.
+\resumeItemListEnd
+
+\resumeProject
+{\normalfont \textbf{Load Balancer: } \raisebox{}{\href{https://github.com/sudhamshreddy7/Load-Balancer}{\color{blue}\underline{[GitHub]}}}}
+{} %Event Dates
+\vspace{0.5mm}
+\resumeItemListStart
+\normalfont \item[$\bullet$] Implemented a load balancer in Go that acts as a reverse proxy, optimizing server efficiency by distributing client requests across multiple remote servers using various load balancing algorithms.
+\normalfont \item[$\bullet$] Implemented multiple algorithms including Round Robin, Weighted Round Robin, Least Connections, and Random, allowing for flexible and efficient workload distribution based on server conditions and performance metrics.
+\resumeItemListEnd
+
+\resumeProject
+{\normalfont \textbf{Replacing Clock Algorithm with LRU in PostgreSQL:} \raisebox{}{\href{https://github.com/sudhamshreddy7/PostgreSQL}{\color{blue}\underline{[GitHub]}}}}
+
+\vspace{0.5mm}
+\resumeItemListStart
+\normalfont \item[$\bullet$] Implemented a significant enhancement by replacing the Clock Algorithm with the more efficient Least Recently Used (LRU) caching technique, leading to a \textbf{15\% improvement} in custom read query performance.
+\normalfont \item[$\bullet$] This project involved modifying the open-source PostgreSQL code base, providing a deeper understanding of database caching mechanisms and honing skills in code modification and optimization within large scale open-source projects.
+\resumeItemListEnd
+
+% \resumeProject
+% {\normalfont \textbf{SoundStream: A Video to Audio converting website: }\raisebox{}{\href{https://github.com/sudhamshreddy7/SoundExtract}{\color{blue}\underline{[GitHub]}}}}
+% {}
+% \vspace{0.5mm}
+% \resumeItemListStart
+
+% \normalfont \item[$\bullet$] Developed and deployed the SoundStream project utilizing a microservice architecture with technologies such as Python, Kubernetes, RabbitMQ, and MongoDB on AWS EKS, ensuring efficient container management and application monitoring with Datadog.
+% \normalfont \item[$\bullet$] Key components included a user-facing video upload application, a Video to MP3 conversion service, and a Notification Service, with RabbitMQ managing inter-service communication and MongoDB for video storage.
+  
+% \resumeItemListEnd
+
+% \resumeProject
+% {\normalfont \textbf{Grievance Redressal Portal: An approval and escalation system for resolving registration issues}}
+% {\normalfont Jan. 2019 - Apr. 2019} %Event Dates
+% \resumeItemListStart
+% \normalfont \item[$\bullet$] Headed a team of 6 members in Smart India Hackathon-2019. Conferred first prize by DIPP. Engineered backend service to assign tickets to officers, escalate pending tickets on a time-basis, and provided \textbf{REST APIs} for visualization dashboard
+% \normalfont \item[$\bullet$] Engineered backend service to assign tickets to concerned officer, escalating tickets on time-basis and provided \textbf{REST APIs} for visualization dashboard
+% \resumeItemListEnd
+
+% \resumeProject
+% {\normalfont \textbf{Supervised Learning Models: }}
+% {\normalfont Jan. 2022 - May 2022} %Event Dates
+% \resumeItemListStart
+% % \normalfont \item[$\bullet$] Trained a regularized neural network on MNIST dataset to recognize handwritten digits with an accuracy of \textbf{93\%}
+% \normalfont \item[$\bullet$] Obtained an accuracy of \textbf{93\%} in handwritten digits recognition by training a regularized neural network on MNIST dataset.
+% \normalfont \item[$\bullet$] Achieved \textbf{97\%} accuracy and F1 score of \textbf{0.96} on the Breast Cancer Dataset by executing Random Forest. Performed hyper-parameter tuning using grid search. Stratified cross-validation was used to assess model's generalization capability
+% \resumeItemListEnd
+
+% \resumeProject
+% {\normalfont \textbf{Reinforcement Learning algorithms for classic MDPs: }} %Project Name
+% {} %Event Dates
+% \resumeItemListStart
+% \normalfont \item[$\bullet$] Created \textbf{reinforcement learning models} based on value iteration, policy iteration, cross-entropy method, Monte-Carlo, SARSA, Episodic Semi-Gradient n-step SARSA, Q-learning, One-Step Actor-Critic and True Online SARSA($\lambda$) algorithms.
+% \normalfont \item[$\bullet$] Performed a comparative study based on stability, robustness, maximum rewards, convergence speed, runtime, and ease of hyper-parameter tuning on different MDPs such as Cart-Pole, Mountain Car, and Acrobot.
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.985mm}
+\vspace{0.5mm}
+
+% \vspace{-1000pt}
+%-----------TECHNICAL SKILLS-----------------
+
+%-----------EXTRA CURRICULAR ACTIVITIES-----------------
+\section{\normalfont CERTIFICATIONS}
+% \vspace{0.5mm}
+
+\resumeItemListStart
+\normalfont \item[$\bullet$] AWS Certified Solutions Architect - Associate  {\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/a61b6c3aa8c546f5af6aef10d8a451d6}{\color{blue}\underline{[Certificate]}}}
+
+
+\resumeItemListEnd
+
+%-------------------------------------------    
+\end{document}
